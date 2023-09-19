@@ -1,3 +1,9 @@
 I have made content based recommender system which gives recommendation based upon the content searched or consumed by the user . It uses count vectorization to convert unstructered data into structured format and 
 then it finds cosine similaritie between the movie given by the user and the other movies in the dataset.Top 10 movies which are similar to the input on the basis of cosine similarity are recommended along with their
 index value in the dataset.
+
+The second recommender system i have built is matrix factorization recommender system.This type of recommender system is based on singular value decomposition, we do not require any information about both the user and the movies . This algorithm makes features of both the movies and the user which are intially randomized and then are optimized on the basis of gradient descent.
+
+User based collaborative filtering and item based collaborative filtering are both based on the same principle, they identify their nearest neighbors and make predictions based on them.In user based collaborative filtering if some movies are similarly rated by multiple then they are recommended the movies which are not common between them and have not been watched by them.Similarly in item based collaborative filtering movies with similar ratings are recommended which when used along with content based recommender system can help in giving relevant suggestions with significant variety.
+
+Market basket analysis is based on apriori theorem which helps us in finding out a group of items which is frequently bought together without using a large amount of memory.Apriori theorem states that a group of items is considered to be frequent only if all the permutations combinations of the items present in the group are independently frequent.It provides us with various parameters such as support,confidence and lift which help us fine tune our results.
